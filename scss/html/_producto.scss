@@ -1,0 +1,21 @@
+//import
+
+
+/* estilos main producto*/
+
+.main-producto {
+    padding: $medida-quinta;
+    .card-productos{
+        margin: $medida-cuarta;
+        .card{
+            gap: $medida-cuarta;
+            margin: $medida-cuarta;
+            div{
+                h5{
+                    @include tipografia (1.5rem, rgb(224, 41, 41), center)
+                }
+            }
+        }
+    }
+
+}

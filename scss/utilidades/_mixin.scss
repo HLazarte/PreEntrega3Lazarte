@@ -1,0 +1,13 @@
+// mixin 
+
+@mixin tipografia ($size, $color-tipografia, $alineacion){
+    font-size: $size;
+    color: $color-tipografia;
+    text-align: $alineacion;
+}
+
+@mixin hover ($scale, $porcent, $second){
+    transform: $scale;
+    opacity: $porcent;
+    transition: $second;
+}

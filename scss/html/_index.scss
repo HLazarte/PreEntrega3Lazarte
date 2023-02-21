@@ -1,0 +1,93 @@
+// import
+
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+
+
+/* estilos de header*/
+
+header{
+    background-color: $color-principal;
+}
+
+.navbar-brand {
+    color: $color-cuarto;
+    text-transform: uppercase;
+}
+
+/* estilos de main en index*/
+
+main{
+    background-color: $color-secundario;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: $medida-cuarta;
+    }
+}
+.container-main{
+    height: 80vh;
+    display: grid;
+    gap: $medida-cuarta;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 5% 40%;
+    
+}
+
+.imagen-inicio{
+    display: none;
+}
+ 
+footer {
+    background-color: $color-principal;
+    text-align: center;
+    h2{
+        @include tipografia(1rem, whitesmoke, center)
+    }
+    h3{
+        @include tipografia(1rem, whitesmoke, center)
+    }
+    .logoinstagram {
+        @extend %logos;
+    }
+}
+
+
+
+
+
+/*  mq desktop */
+
+@media screen and (min-width: 1024px) {
+    main {
+        background-color: $color-tercero;
+    }
+
+    
+.container-main {
+    padding: $medida-cuarta;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40% 60%;
+    .imagen-inicio{
+        display: block;
+        grid-row: span 2;
+        
+    }
+
+  }
+  .imagen-inicio:hover {
+    @include hover (scale(0.8), 70%, 3s)
+  }
+  .imagen-aromas:hover {
+    @include hover (scale(0.8), 70%, 3s)
+    }
+  .imagen-home:hover {
+    @include hover (scale(0.8), 70%, 3s)   
+    }
+
+}
+
