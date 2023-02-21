@@ -1,0 +1,36 @@
+// import
+
+
+/*estilos de quiero revender */
+
+main{
+    padding: $medida-quinta;
+    h1{
+        @include tipografia (3rem, rgb(1, 0, 5), center);
+        margin: $medida-quinta;
+    }
+    p{
+        @include tipografia (1rem, rgb(1, 0, 5), center);
+
+    }
+    p{
+        @include tipografia (1rem, rgb(1, 0, 5), center);
+
+    }
+    div{
+        .formulario-quierorevender{
+        padding: $medida-quinta;
+        background-color: $color-sexto;
+        .form-label {
+            @include tipografia (1.5rem, rgb(12, 11, 11), left)
+        }
+        }
+    }
+    div{
+        .imagenwap{
+            @extend %logos;
+        }
+    }
+}
+    
+

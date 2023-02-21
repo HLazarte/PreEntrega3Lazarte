@@ -1,0 +1,31 @@
+//import
+
+
+/* estilos de main quienes somos */
+
+main{
+    padding: $medida-quinta;
+    h1{
+        @include tipografia (3rem, rgb(27, 6, 105), center)
+    }
+    div{
+        p{
+            @include tipografia (1rem, rgb(1, 0, 5), center);
+            margin: $medida-quinta;
+        }
+    }
+    div{
+        padding: $medida-cuarta;
+    }
+}
+
+/*  mq desktop  quines somos */
+
+@media screen and (min-width: 1024px){
+            .video-quienessomos{
+                margin-left: $medida-sexta;
+                width: 900px;
+                height: 400px;
+            }
+}
+

@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-footer .logoinstagram {
+footer .logoinstagram, main div .imagenwap {
   width: 7%;
   margin: 0.3rem;
   padding: 0.3rem; }
@@ -19,7 +19,7 @@ header {
 
 /* estilos de main en index*/
 main {
-  background-color: #ebccc6; }
+  background-color: #c7a7a1; }
   main img {
     width: 100%;
     height: 100%;
@@ -75,15 +75,13 @@ footer {
 /* estilos contacto */
 .main-contacto {
   padding: 2rem; }
-
-.form-contacto {
-  background-color: #acacdb;
-  padding: 1rem; }
-
-.form-label {
-  font-size: 1.5rem;
-  color: #0c0b0b;
-  text-align: left; }
+  .main-contacto .form-contacto {
+    background-color: #acacdb;
+    padding: 1rem; }
+    .main-contacto .form-contacto .form-label {
+      font-size: 1.5rem;
+      color: #0c0b0b;
+      text-align: left; }
 
 /* estilos main producto*/
 .main-producto {
@@ -97,3 +95,49 @@ footer {
         font-size: 1.5rem;
         color: #e02929;
         text-align: center; }
+
+/* estilos de main quienes somos */
+main {
+  padding: 2rem; }
+  main h1 {
+    font-size: 3rem;
+    color: #1b0669;
+    text-align: center; }
+  main div p {
+    font-size: 1rem;
+    color: #010005;
+    text-align: center;
+    margin: 2rem; }
+  main div {
+    padding: 1rem; }
+
+/*  mq desktop  quines somos */
+@media screen and (min-width: 1024px) {
+  .video-quienessomos {
+    margin-left: 3rem;
+    width: 900px;
+    height: 400px; } }
+
+/*estilos de quiero revender */
+main {
+  padding: 2rem; }
+  main h1 {
+    font-size: 3rem;
+    color: #010005;
+    text-align: center;
+    margin: 2rem; }
+  main p {
+    font-size: 1rem;
+    color: #010005;
+    text-align: center; }
+  main p {
+    font-size: 1rem;
+    color: #010005;
+    text-align: center; }
+  main div .formulario-quierorevender {
+    padding: 2rem;
+    background-color: #72af72; }
+    main div .formulario-quierorevender .form-label {
+      font-size: 1.5rem;
+      color: #0c0b0b;
+      text-align: left; }

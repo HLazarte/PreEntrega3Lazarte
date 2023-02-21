@@ -7,14 +7,12 @@
 
 .main-contacto{
     padding: $medida-quinta;
-   
+    .form-contacto{
+        background-color: $color-quinto;
+        padding: $medida-cuarta;
+        .form-label {
+            @include tipografia (1.5rem, rgb(12, 11, 11), left)
+        }
+    }
 
-}
-.form-contacto{
-    background-color: $color-quinto;
-    padding: $medida-cuarta;
-}
-
-.form-label {
-    @include tipografia (1.5rem, rgb(12, 11, 11), left)
 }
