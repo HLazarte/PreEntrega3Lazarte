@@ -42,6 +42,8 @@ main{
     display: none;
 }
  
+/* estilos de footer */
+
 footer {
     background-color: $color-principal;
     text-align: center;
@@ -56,11 +58,41 @@ footer {
     }
 }
 
+/*mq tablet index*/
+
+@media screen and (min-width: 600px) {
+    main {
+        background-color: $color-sexto;
+    }
+        
+.container-main {
+    padding: $medida-cuarta;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80% 20%;
+    .imagen-aromas{
+        display: none;
+    }
+    .imagen-inicio{
+        display: block;
+        grid-row: span 2;
+        
+    }
+
+  }
+  .imagen-inicio:hover {
+    @include hover (scale(0.8), 70%, 3s)
+  }
+  .imagen-aromas:hover {
+    @include hover (scale(0.8), 70%, 3s)
+    }
+  .imagen-home:hover {
+    @include hover (scale(0.8), 70%, 3s)   
+    }
+
+}
 
 
-
-
-/*  mq desktop */
+/*  mq desktop index*/
 
 @media screen and (min-width: 1024px) {
     main {
@@ -75,7 +107,10 @@ footer {
     .imagen-inicio{
         display: block;
         grid-row: span 2;
-        
+    }
+    .imagen-aromas{
+        display: block;
+        grid-row: span 2;
     }
 
   }

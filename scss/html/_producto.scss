@@ -2,20 +2,27 @@
 
 
 /* estilos main producto*/
-
-.main-producto {
-    padding: $medida-quinta;
-    .card-productos{
-        margin: $medida-cuarta;
-        .card{
+.main-producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        div{
             gap: $medida-cuarta;
-            margin: $medida-cuarta;
             div{
-                h5{
-                    @include tipografia (1.5rem, rgb(224, 41, 41), center)
+                div{
+                    h5{
+                        @include tipografia (1.5rem, rgb(12, 11, 11), center)
+                    }
                 }
-            }
+                
         }
     }
-
+   
+    }
 }
+
+
+
+
+

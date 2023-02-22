@@ -2,16 +2,53 @@
 
 
 
-
-/* estilos contacto */
+/* estilos de main en contacto*/
 
 .main-contacto{
-    padding: $medida-quinta;
-    .form-contacto{
-        background-color: $color-quinto;
-        padding: $medida-cuarta;
-        .form-label {
-            @include tipografia (1.5rem, rgb(12, 11, 11), left)
+    h1{
+        @include tipografia (3rem, rgb(27, 6, 105), center)
+    }
+    p{
+        @include tipografia (1rem, rgb(3, 1, 10), center)
+       
+    }
+    section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $medida-cuarta;
+    
+      .form-contacto{
+         background-color: $color-quinto;
+         padding: $medida-sexta;
+        
+         .form-label {
+            @include tipografia (1rem, rgb(12, 11, 11), left)
+         }
+
+      }
+    }
+}
+
+/* mq tablet de contacto*/
+
+@media screen and (min-width: 600px){
+    .main-contacto{
+        p{
+            padding: $medida-quinta;
+        }
+        section{
+            padding: 0.1rem;
+        }
+    }
+}
+
+/* mq desktop de contacto*/
+
+@media screen and (min-width: 1024px){
+    .main-contacto{
+        p{
+            padding: $medida-sexta;
         }
     }
 

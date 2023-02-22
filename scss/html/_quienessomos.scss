@@ -3,29 +3,55 @@
 
 /* estilos de main quienes somos */
 
-main{
-    padding: $medida-quinta;
+.main-quienessomos{
     h1{
         @include tipografia (3rem, rgb(27, 6, 105), center)
     }
     div{
         p{
             @include tipografia (1rem, rgb(1, 0, 5), center);
-            margin: $medida-quinta;
+          margin: $medida-sexta;
         }
     }
     div{
-        padding: $medida-cuarta;
     }
 }
 
-/*  mq desktop  quines somos */
+
+/* mq tablet quienes somos */
+
+@media screen and (min-width: 600px){
+    .main-quienessomos{
+        padding: $medida-sexta;
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}    
+        
+
+
+
+
+
+/*  mq desktop  quienes somos */
 
 @media screen and (min-width: 1024px){
-            .video-quienessomos{
-                margin-left: $medida-sexta;
-                width: 900px;
-                height: 400px;
+    .main-quienessomos{
+        div{
+            p{
+                @include tipografia (1.5rem, rgb(1, 0, 5), center);
             }
+            .video-quienessomos{
+                width: 700px;
+                height: 400px;
+                margin: $medida-sexta
+            }
+                 
+        }
+    }
+           
 }
 
