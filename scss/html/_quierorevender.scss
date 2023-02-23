@@ -3,12 +3,14 @@
 
 /*estilos de main quiero revender */
 
-main{
+.main-quierorevender{
     padding: $medida-quinta;
     h1{
         @include tipografia (3rem, rgb(1, 0, 5), center);
         margin: $medida-quinta;
     }
+    section{
+        @include flex;
     p{
         @include tipografia (1rem, rgb(1, 0, 5), center);
 
@@ -19,18 +21,25 @@ main{
     }
     div{
         .formulario-quierorevender{
-        padding: $medida-quinta;
-        background-color: $color-sexto;
+            padding: $medida-quinta;
+            background-color: $color-sexto;
         .form-label {
             @include tipografia (1.5rem, rgb(12, 11, 11), left)
         }
         }
+    }    
     }
     div{
         .imagenwap{
             @extend %logos;
         }
     }
+}
+
+/* mq tablet de quiero revender*/
+
+@media screen and (min-width: 600px) {
+    
 }
     
 

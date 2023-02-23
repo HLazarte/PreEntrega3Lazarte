@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-footer .logoinstagram, main div .imagenwap {
+footer .logoinstagram, .main-quierorevender div .imagenwap {
   width: 7%;
   margin: 0.3rem;
   padding: 0.3rem; }
@@ -139,13 +139,18 @@ footer {
     padding: 3rem; } }
 
 /* estilos main producto*/
-.main-producto {
+.main-producto h1 {
+  font-size: 3rem;
+  color: #1b0669;
+  text-align: center; }
+
+.main-producto section {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .main-producto div div {
+  .main-producto section div div {
     gap: 1rem; }
-    .main-producto div div div div h5 {
+    .main-producto section div div div div h5 {
       font-size: 1.5rem;
       color: #0c0b0b;
       text-align: center; }
@@ -156,20 +161,23 @@ footer {
   color: #1b0669;
   text-align: center; }
 
-.main-quienessomos div p {
-  font-size: 1rem;
-  color: #010005;
-  text-align: center;
-  margin: 3rem; }
+.main-quienessomos section {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .main-quienessomos section div p {
+    font-size: 1rem;
+    color: #010005;
+    text-align: center;
+    margin: 3rem; }
 
 /* mq tablet quienes somos */
 @media screen and (min-width: 600px) {
   .main-quienessomos {
     padding: 3rem; }
-    .main-quienessomos section {
-      display: flex;
-      justify-content: center;
-      align-items: center; } }
+    .main-quienessomos .video-quienessomos {
+      width: 400px;
+      height: 400px; } }
 
 /*  mq desktop  quienes somos */
 @media screen and (min-width: 1024px) {
@@ -183,25 +191,31 @@ footer {
     margin: 3rem; } }
 
 /*estilos de main quiero revender */
-main {
+.main-quierorevender {
   padding: 2rem; }
-  main h1 {
+  .main-quierorevender h1 {
     font-size: 3rem;
     color: #010005;
     text-align: center;
     margin: 2rem; }
-  main p {
-    font-size: 1rem;
-    color: #010005;
-    text-align: center; }
-  main p {
-    font-size: 1rem;
-    color: #010005;
-    text-align: center; }
-  main div .formulario-quierorevender {
-    padding: 2rem;
-    background-color: #98af98; }
-    main div .formulario-quierorevender .form-label {
-      font-size: 1.5rem;
-      color: #0c0b0b;
-      text-align: left; }
+  .main-quierorevender section {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main-quierorevender section p {
+      font-size: 1rem;
+      color: #010005;
+      text-align: center; }
+    .main-quierorevender section p {
+      font-size: 1rem;
+      color: #010005;
+      text-align: center; }
+    .main-quierorevender section div .formulario-quierorevender {
+      padding: 2rem;
+      background-color: #98af98; }
+      .main-quierorevender section div .formulario-quierorevender .form-label {
+        font-size: 1.5rem;
+        color: #0c0b0b;
+        text-align: left; }
+
+/* mq tablet de quiero revender*/

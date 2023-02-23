@@ -3,9 +3,11 @@
 
 /* estilos main producto*/
 .main-producto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    h1{
+        @include tipografia (3rem, rgb(27, 6, 105), center)
+    }
+    section{
+        @include flex;
     div{
         div{
             gap: $medida-cuarta;
@@ -18,8 +20,8 @@
                 
         }
     }
-   
-    }
+   }
+ }
 }
 
 

@@ -7,14 +7,15 @@
     h1{
         @include tipografia (3rem, rgb(27, 6, 105), center)
     }
-    div{
+    section{
+        @include flex;
+      div{
         p{
             @include tipografia (1rem, rgb(1, 0, 5), center);
           margin: $medida-sexta;
         }
-    }
-    div{
-    }
+      }
+  }
 }
 
 
@@ -23,17 +24,13 @@
 @media screen and (min-width: 600px){
     .main-quienessomos{
         padding: $medida-sexta;
-        section{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .video-quienessomos{
+            width: 400px;
+            height: 400px;
         }
     }
 }    
         
-
-
-
 
 
 /*  mq desktop  quienes somos */

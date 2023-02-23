@@ -1,5 +1,7 @@
 // mixin 
 
+// con parametros
+
 @mixin tipografia ($size, $color-tipografia, $alineacion){
     font-size: $size;
     color: $color-tipografia;
@@ -10,4 +12,13 @@
     transform: $scale;
     opacity: $porcent;
     transition: $second;
+}
+
+
+// sin parametros
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

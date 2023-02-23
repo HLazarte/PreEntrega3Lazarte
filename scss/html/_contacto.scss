@@ -13,9 +13,7 @@
        
     }
     section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     padding: $medida-cuarta;
     
       .form-contacto{
