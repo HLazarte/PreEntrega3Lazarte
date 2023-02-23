@@ -26,12 +26,17 @@
 
       }
     }
+    div{
+        .imagenwap{
+            @extend %logos;
+        }
+    }
 }
-
 /* mq tablet de contacto*/
 
 @media screen and (min-width: 600px){
     .main-contacto{
+        padding: $medida-sexta;
         p{
             padding: $medida-quinta;
         }
@@ -45,6 +50,7 @@
 
 @media screen and (min-width: 1024px){
     .main-contacto{
+        padding: $medida-septima;
         p{
             padding: $medida-sexta;
         }

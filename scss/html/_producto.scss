@@ -3,6 +3,7 @@
 
 /* estilos main producto*/
 .main-producto{
+    padding: $medida-cuarta;
     h1{
         @include tipografia (3rem, rgb(27, 6, 105), center)
     }
@@ -22,6 +23,16 @@
     }
    }
  }
+}
+
+/* mq tablet productos */
+
+
+@media screen and (min-width: 600px){
+.main-producto{
+        padding: $medida-sexta;
+         }
+
 }
 
 

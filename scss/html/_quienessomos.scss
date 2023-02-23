@@ -4,6 +4,7 @@
 /* estilos de main quienes somos */
 
 .main-quienessomos{
+    padding: $medida-sexta;
     h1{
         @include tipografia (3rem, rgb(27, 6, 105), center)
     }
@@ -12,7 +13,7 @@
       div{
         p{
             @include tipografia (1rem, rgb(1, 0, 5), center);
-          margin: $medida-sexta;
+            margin: $medida-sexta;
         }
       }
   }
@@ -23,7 +24,7 @@
 
 @media screen and (min-width: 600px){
     .main-quienessomos{
-        padding: $medida-sexta;
+        padding: $medida-septima;
         .video-quienessomos{
             width: 400px;
             height: 400px;

@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-footer .logoinstagram, .main-quierorevender div .imagenwap {
+footer .logoinstagram, .main-contacto div .imagenwap, .main-quierorevender div .imagenwap {
   width: 7%;
   margin: 0.3rem;
   padding: 0.3rem; }
@@ -24,7 +24,7 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    padding: 1rem; }
+    padding: 2rem; }
 
 .container-main {
   height: 80vh;
@@ -54,7 +54,7 @@ footer {
   main {
     background-color: #98af98; }
   .container-main {
-    padding: 1rem;
+    padding: 2rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 80% 20%; }
     .container-main .imagen-aromas {
@@ -80,7 +80,7 @@ footer {
   main {
     background-color: #b0b6b6; }
   .container-main {
-    padding: 1rem;
+    padding: 2rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 40% 60%; }
     .container-main .imagen-inicio {
@@ -128,53 +128,64 @@ footer {
 
 /* mq tablet de contacto*/
 @media screen and (min-width: 600px) {
-  .main-contacto p {
-    padding: 2rem; }
-  .main-contacto section {
-    padding: 0.1rem; } }
+  .main-contacto {
+    padding: 3rem; }
+    .main-contacto p {
+      padding: 2rem; }
+    .main-contacto section {
+      padding: 0.1rem; } }
 
 /* mq desktop de contacto*/
 @media screen and (min-width: 1024px) {
-  .main-contacto p {
-    padding: 3rem; } }
+  .main-contacto {
+    padding: 6rem; }
+    .main-contacto p {
+      padding: 3rem; } }
 
 /* estilos main producto*/
-.main-producto h1 {
-  font-size: 3rem;
-  color: #1b0669;
-  text-align: center; }
+.main-producto {
+  padding: 1rem; }
+  .main-producto h1 {
+    font-size: 3rem;
+    color: #1b0669;
+    text-align: center; }
+  .main-producto section {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main-producto section div div {
+      gap: 1rem; }
+      .main-producto section div div div div h5 {
+        font-size: 1.5rem;
+        color: #0c0b0b;
+        text-align: center; }
 
-.main-producto section {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .main-producto section div div {
-    gap: 1rem; }
-    .main-producto section div div div div h5 {
-      font-size: 1.5rem;
-      color: #0c0b0b;
-      text-align: center; }
+/* mq tablet productos */
+@media screen and (min-width: 600px) {
+  .main-producto {
+    padding: 3rem; } }
 
 /* estilos de main quienes somos */
-.main-quienessomos h1 {
-  font-size: 3rem;
-  color: #1b0669;
-  text-align: center; }
-
-.main-quienessomos section {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .main-quienessomos section div p {
-    font-size: 1rem;
-    color: #010005;
-    text-align: center;
-    margin: 3rem; }
+.main-quienessomos {
+  padding: 3rem; }
+  .main-quienessomos h1 {
+    font-size: 3rem;
+    color: #1b0669;
+    text-align: center; }
+  .main-quienessomos section {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main-quienessomos section div p {
+      font-size: 1rem;
+      color: #010005;
+      text-align: center;
+      margin: 3rem; }
 
 /* mq tablet quienes somos */
 @media screen and (min-width: 600px) {
   .main-quienessomos {
-    padding: 3rem; }
+    padding: 6rem; }
     .main-quienessomos .video-quienessomos {
       width: 400px;
       height: 400px; } }
@@ -212,10 +223,18 @@ footer {
       text-align: center; }
     .main-quierorevender section div .formulario-quierorevender {
       padding: 2rem;
-      background-color: #98af98; }
+      background-color: #838396; }
       .main-quierorevender section div .formulario-quierorevender .form-label {
         font-size: 1.5rem;
         color: #0c0b0b;
         text-align: left; }
 
 /* mq tablet de quiero revender*/
+@media screen and (min-width: 600px) {
+  .main-quierorevender {
+    padding: 3rem; } }
+
+/* mq desktop quierorevender */
+@media screen and (min-width: 1024px) {
+  .main-quierorevender {
+    padding: 6rem; } }
